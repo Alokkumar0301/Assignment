@@ -1,0 +1,68 @@
+import 'dart:io';
+
+void main() {
+  print("Enter month number (1-12):");
+  String? monthNumberInput = stdin.readLineSync();
+
+  if (monthNumberInput == null) {
+    print("Invalid input.");
+    return;
+  }
+
+  int monthNumber = int.parse(monthNumberInput);
+
+  int daysInMonth;
+
+  switch (monthNumber) {
+    case 1:
+      daysInMonth = 31;
+      print("January has $daysInMonth days.");
+      break;
+    case 2:
+      daysInMonth = 28; // Default for February
+      print("February has $daysInMonth days.");
+      break;
+    case 3:
+      daysInMonth = 31;
+      print("March has $daysInMonth days.");
+      break;
+    case 4:
+      daysInMonth = 30;
+      print("April has $daysInMonth days.");
+      break;
+    case 5:
+      daysInMonth = 31;
+      print("May has $daysInMonth days.");
+      break;
+    case 6:
+      daysInMonth = 30;
+      print("June has $daysInMonth days.");
+      break;
+    case 7:
+      daysInMonth = 31;
+      print("July has $daysInMonth days.");
+      break;
+    case 8:
+      daysInMonth = 31;
+      print("August has $daysInMonth days.");
+      break;
+    case 9:
+      daysInMonth = 30;
+      print("September has $daysInMonth days.");
+      break;
+    case 10:
+      daysInMonth = 31;
+      print("October has $daysInMonth days.");
+      break;
+    case 11:
+      daysInMonth = 30;
+      print("November has $daysInMonth days.");
+      break;
+    case 12:
+      daysInMonth = 31;
+      print("December has $daysInMonth days.");
+      break;
+    default:
+      print("Invalid month number.");
+  }
+}
