@@ -1,0 +1,13 @@
+void main() {
+  print("Using for loop:");
+  for (int i = -10; i <= -1; i++) {
+    print(i);
+  }
+
+  print("\nUsing while loop:");
+  int j = -10;
+  while (j <= -1) {
+    print(j);
+    j++;
+  }
+}
