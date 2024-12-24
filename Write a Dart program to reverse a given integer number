@@ -1,0 +1,21 @@
+import 'dart:io';
+
+int reverseInteger(int num) {
+  int reversed = 0;
+
+  while (num != 0) {
+    int digit = num % 10; 
+    reversed = reversed * 10 + digit;
+    num ~/= 10; 
+  }
+
+  return reversed;
+}
+
+void main() {
+  print("Enter an integer:");
+  int number = int.parse(stdin.readLineSync()!);
+
+  int reversedNumber = reverseInteger(number);
+  print("Reversed number: $reversedNumber");
+}
