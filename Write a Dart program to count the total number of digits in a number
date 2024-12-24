@@ -1,0 +1,18 @@
+int countDigits(int number) {
+  if (number == 0) {
+    return 1; 
+  }
+
+  int count = 0;
+  while (number > 0) {
+    number ~/= 10; 
+    count++;
+  }
+  return count;
+}
+
+void main() {
+  int number = 1213;
+  int digitCount = countDigits(number);
+  print("The number of digits in $number is: $digitCount");
+}
